@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Prashant Calculator</string>
+    <string name="enter_first_number">Enter First number</string>
+    <string name="enter_second_number">Enter Second number</string>
+    <string name="addition">Addition</string>
+    <string name="substraction">Substraction</string>
+    <string name="division">Division</string>
+    <string name="multiplication">Multiplication</string>
+    <string name="result">Result</string>
+</resources>
