@@ -1,0 +1,23 @@
+name: Deploy to GoDaddy
+
+on:
+  push:
+    branches:
+      - Dev
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Deploy to GoDaddy
+        uses: wzieba/Ftp-Deploy-Action@v2
+        with:
+          server: ftp://your-ftp-server.com
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: path/to/your/app
+          remote-dir: /public_html
