@@ -19,5 +19,5 @@ jobs:
           server: ftp://electronichealth.rcpandharpur.in
           username: Prashant
           password: Google@12
-          local-dir: public/html
+          local-dir: public/ftp
           remote-dir: /home/dwaz9seft2fz/public_html/electronichealth.rcpandharpur.in/Prashant
