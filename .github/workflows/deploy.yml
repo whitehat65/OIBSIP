@@ -1,9 +1,9 @@
-name: Deploy to GoDaddy
+name: Deploy to cPanel FTP
 
 on:
   push:
     branches:
-      - Dev
+      - dev
 
 jobs:
   deploy:
@@ -13,11 +13,11 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Deploy to GoDaddy
+      - name: Deploy to cPanel FTP
         uses: wzieba/Ftp-Deploy-Action@v2
         with:
-          server: ftp://your-ftp-server.com
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: path/to/your/app
-          remote-dir: /public_html
+          server: ftp://electronichealth.rcpandharpur.in
+          username: Prashant
+          password: Google@12
+          local-dir: public/html
+          remote-dir: /home/dwaz9seft2fz/public_html/electronichealth.rcpandharpur.in/Prashant
